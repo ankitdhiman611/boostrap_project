@@ -1,0 +1,15 @@
+.mymenu_anchor
+{
+  color:white !important;
+}
+
+.mynav_background
+{
+    background:linear-gradient(to left, rgb(53, 57, 168), #9c72d7);
+}
+.notification
+{
+     background-color: rgb(195, 153, 221);
+     color:white;
+     text-align: center;
+}
