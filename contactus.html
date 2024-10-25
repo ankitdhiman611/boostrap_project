@@ -1,17 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css"/>  
-    <link rel="icon" href="images/logo.png"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="images/logo.png" />
 </head>
+
 <body>
 
- <!-- Navbar start -->
- <header class="fixed-top">
+  <!-- Modal -->
+  <div class="modal fade" id="ankit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-container">
+            <div class="form-card">
+              <h2 class="text-center" id="formTitle">Login</h2>
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                    required name="password">
+                </div>
+                <div class="text-center">
+                  <button type="submit" style="width:200px" class="btn btn-primary">Login</button>
+                </div>
+                <div class="text-center mt-3">
+                  <p>Don't have an account? <a href="register.html" data-bs-toggle="modal"
+                      data-bs-target="#ankit1">Register Here</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL login end-->
+
+  <!-- MODAL register-->
+  <div class="modal fade" id="ankit1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-container">
+            <div class="form-card">
+              <h2 class="text-center" id="formTitle">Login</h2>
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="Username" class="form-label">Username</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required
+                    name="Username">
+                </div>
+                <div class="mb-3">
+                  <label for="createPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                    required name="password">
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirm Your Password</label>
+                  <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                    required name="password">
+                </div>
+                <div class="text-center">
+                  <button type="submit" style="width: 200px;" class="btn btn-primary">Sign Up</button>
+                </div>
+                <div class="text-center mt-3">
+                  <p>Already have an account? <a href="login.html" data-bs-toggle="modal" data-bs-target="#ankit">Login
+                      Here</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal register end -->
+  <!-- modal close -->
+
+  <!-- Navbar start -->
+  <header class="fixed-top">
     <div class="notification d-block d-sm-none p-2">
       call us : +919728082087
     </div>
@@ -60,10 +154,14 @@
               <a class="nav-link mymenu_anchor" aria-disabled="true" href="contact.html">Dietician & GYM</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mymenu_anchor" href="login.html">Login</a>
+              <a class="nav-link mymenu_anchor" data-bs-toggle="modal" data-bs-target="#ankit"
+                href="login.html">Login</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mymenu_anchor" href="signup.html">New user?</a>
+              <a class="nav-link mymenu_anchor" data-bs-toggle="modal" data-bs-target="#ankit1" href="#">Signup</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mymenu_anchor" href="contactus.html">Contact Us</a>
             </li>
           </ul>
           <form class="d-flex ms-auto" role="search">
@@ -78,54 +176,152 @@
   <!-- Navbar End -->
 
 
-       <!-- MapBanner -->
-  
- <div  style="position: relative;">
-    <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29010.854647476284!2d76.73031797431643!3d30.7224839!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fedad88991a07%3A0xb4de516e9171f70e!2sNetmax%20Technologies%20Private%20Limited!5e1!3m2!1sen!2sin!4v1729267442520!5m2!1sen!2sin"  height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-    <div class="text-center video-text-over">
-          <button class="btn btn-danger">Get Directions</button>
-       </div>
-  </div>
-   <!-- Map Banner End -->
+  <!-- MapBanner -->
 
-   <div class="container-fluid mt-5">
+  <div style="position: relative;">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3442.216714867754!2d76.77546969678959!3d30.373203500000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390fc982874b7b75%3A0x3a36e7d7265278ab!2sOrganic%20Corner%20Fresh%20fruit%20%26%20Vegetables!5e0!3m2!1sen!2sin!4v1729521841838!5m2!1sen!2sin"
+      width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <div class="text-center video-text-over">
+      <button class="btn btn-danger">Get Directions</button>
+    </div>
+  </div>
+  <!-- Map Banner End -->
+
+  <div class="container mt-5">
     <h2 class="text-center mb-5">Contact us</h2>
     <div class="row mt-5">
-        <div class="col-sm-4 offset-sm-1" >
-         <img src="images/contactus.png" class="img-fluid" style="border-radius:30px;"/>
-        </div>
-        <div class="col-sm-5 offset-sm-1 contactdiv" style="border: 1px solid grey;border-radius:10px;">
-         <h3 class="text-center mt-2 p-3 bg-danger text-white">Reach Us!</h3>
-         <form action="contact.html" method="post">
-            <div class="mt-4">
-                <label for="to">Email:</label>
-                <input type="email" class="form-control mt-1 mb-4" id="to" placeholder="Enter Your Email-Id" required name="email"/>
-                <label for="sub">Subject:</label>
-                <input type="text" class="form-control mt-1 mb-4" id="sub" placeholder="Enter the Subject" required name="subject"/>
-                <label for="mobile">Mobile:</label>
-                <input type="number" class="form-control mt-1 mb-4" id="mobile" placeholder="Enter Your Mobile No" required name="Mobile"/>
-                <label for="enquiry">Enquiry Type:</label>
-                <select class="form-control mt-1 mb-4" id="enquiry"  required name="enquiry">
-                    <option value="" selected disabled>Select Your Reason</option>
-                    <option>Refund Payment</option>
-                    <option>Offer Regarding</option>
-                    <option>Recipt Bill</option>
-                    <option>Feedback</option>
-                </select>
-                <label for="message">Message:</label>
-                <textarea class="form-control mt-1 mb-4" id="message" required name="message"></textarea>
-            </div>
-            <div class="text-center">
-                <button class="btn btn-danger">Submit</button>
-            </div>
+      <div class="col-sm-4 offset-sm-1">
+        <img src="images/catering-services-free-psd-flyer-70879.jpg" class="img-fluid"
+          style="border-radius:30px;height: 650px;" />
+      </div>
+      <div class="col-sm-5 offset-sm-1 contactdiv" style="border: 1px solid grey;border-radius:10px;">
+        <h3 class="text-center mt-2 p-3 bg-danger text-white">Reach Us!</h3>
+        <form action="contact.html" method="post">
+          <div class="mt-4">
+            <label for="to">Email:</label>
+            <input type="email" class="form-control mt-1 mb-4" id="to" placeholder="Enter Your Email-Id" required
+              name="email" />
+            <label for="sub">Subject:</label>
+            <input type="text" class="form-control mt-1 mb-4" id="sub" placeholder="Enter the Subject" required
+              name="subject" />
+            <label for="mobile">Mobile:</label>
+            <input type="number" class="form-control mt-1 mb-4" id="mobile" placeholder="Enter Your Mobile No" required
+              name="Mobile" />
+            <label for="enquiry">Enquiry Type:</label>
+            <select class="form-control mt-1 mb-4" id="enquiry" required name="enquiry">
+              <option value="" selected disabled>Select Your Reason</option>
+              <option>Refund Payment</option>
+              <option>Offer Regarding</option>
+              <option>Recipt Bill</option>
+              <option>Feedback</option>
+            </select>
+            <label for="message">Message:</label>
+            <textarea class="form-control mt-1 mb-4" id="message" required name="message"></textarea>
+          </div>
+          <div class="text-center">
+            <button class="btn btn-danger">Submit</button>
+          </div>
 
-         </form>
-        </div>
+        </form>
+      </div>
     </div>
+    <div class="doted-div w-100 mt-5 mb-4"></div>
 
+  </div>
+
+  <!-- acordian -->
+  <div class="container">
+    <h3 class="ms-4 mb-5">Frequently asked questions</h3>
+
+    <div class="row">
+      <div class="col">
+        <div class="accordion accordion-flush" id="accordionFlushExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                Who are we ?
+              </button>
+            </h2>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the first item's accordion body. Lorem ipsum dolor, sit
+                amet consectetur adipisicing elit. Sequi non pariatur minus illo molestias aspernatur nemo dolor. At
+                quibusdam beatae laudantium perferendis culpa, pariatur deleniti sapiente ratione nisi in corporis
+                provident impedit, iusto cupiditate id minima odio quod commodi a consequuntur. Provident, quam
+                molestias tenetur ea aspernatur beatae laboriosam consectetur facere possimus sequi pariatur saepe
+                aliquam odio? Voluptatibus mollitia eligendi alias magnam quibusdam pariatur delectus, minima, provident
+                rem quidem facilis ullam maxime iste sit vero earum unde. Vero optio tempora error veritatis tenetur
+                laudantium! Fugit alias, laudantium quae itaque laborum labore vitae sapiente cupiditate doloribus
+                cumque perspiciatis exercitationem at reiciendis?</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                Our Mission
+              </button>
+            </h2>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being
+                filled with some actual content. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex
+                placeat quisquam laborum. Corporis voluptas dolorem ut dicta iure voluptatem voluptates! Accusamus fuga
+                sunt amet temporibus ducimus est assumenda, expedita at voluptates hic vitae vel recusandae eum,
+                deleniti quasi reiciendis laborum iure quam? Ex porro placeat amet soluta possimus accusamus voluptatum,
+                quisquam veniam natus architecto autem qui enim delectus voluptates eos totam deleniti neque ad minus
+                assumenda eligendi molestiae provident vitae? Dolor corporis sequi odio? Nostrum eveniet aut accusamus!
+                Dolorum, enim voluptas placeat earum hic minus, saepe omnis repellat magnam asperiores iusto architecto
+                adipisci in, quia eos porro maiores veritatis.</div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                Owner Info
+              </button>
+            </h2>
+            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+              <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the
+                <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting
+                happening here in terms of content, but just filling up the space to make it look, at least at first
+                glance, a bit more representative of how this would look in a real-world application. Lorem, ipsum dolor
+                sit amet consectetur adipisicing elit. Quos nemo possimus adipisci porro. Veniam dolore rem maiores
+                praesentium modi debitis ipsam excepturi facere nihil, quas consectetur voluptates reiciendis ad, culpa
+                sint! Corporis sed est corrupti modi nam quos dolorum aspernatur, expedita eum obcaecati quia. Corporis
+                consequatur quibusdam tenetur ullam aliquam, voluptatem ad velit dicta molestias omnis odio enim magni
+                aut eos deleniti illo nisi sequi atque modi ratione. Excepturi ullam unde sed adipisci consequuntur
+                molestiae, obcaecati nam fugiat eveniet consequatur, eaque doloribus, architecto accusamus perferendis
+                tenetur. In illum id beatae voluptates doloremque omnis incidunt maxime alias odio, corporis, facere
+                quisquam.</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-   </div>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+    <!--Start of Tawk.to Script-->
+<script type="text/javascript">
+  var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+  (function(){
+  var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+  s1.async=true;
+  s1.src='https://embed.tawk.to/671921634304e3196ad6b4fa/1iat2kru7';
+  s1.charset='UTF-8';
+  s1.setAttribute('crossorigin','*');
+  s0.parentNode.insertBefore(s1,s0);
+  })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
+
 </html>

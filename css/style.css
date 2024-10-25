@@ -1,14 +1,21 @@
 body{
   padding-top: 125px;
 }
-
+.colorr{
+background-color: #c0ead6;
+color: #2a5f46;
+/* margin-bottom: 20px; */
+}
+.logoss{
+  mix-blend-mode: multiply;
+}
 .container-fluid img{
   mix-blend-mode: multiply;
 }
 .mymenu_anchor
 {
   color:rgb(245, 244, 244) !important;
-  margin-left: 30px;
+  margin-left: 20px;
 }
 .text{
   color: rgb(143, 17, 157);
@@ -20,6 +27,9 @@ body{
 {
     background:linear-gradient(to left, rgb(232, 51, 51), #c22681);
 }
+/* .card img{
+  width: 100%;
+} */
 .notification
 {
      background-color: rgb(143, 17, 157);
@@ -66,6 +76,9 @@ body{
 .mycards:hover
 {
   box-shadow: 0 10px 16px rgba(0,0,0,0.4), 0 12px 40px rgba(0,0,0,0.3);
+  /* margin: 0; */
+  padding: 0;
+  /* background-color: #d13219; */
 
 }
 @keyframes pankaj
@@ -109,7 +122,13 @@ body{
  
   
 }
-
+.doted-div2{
+  border-top: 5px dotted #f4f1f1; /* Change #000 to your desired color */
+  align-items: center;
+  margin-left: 350px;
+ 
+  
+}
 
 /* 3d pics */
 .Package_Heading
@@ -140,4 +159,38 @@ body{
       width:100%;
       height:100%;
       background-size: cover;
+}
+
+/* acordian */
+.accordion-item,.accordion-header{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+.accordion-item{
+  box-shadow: 0 2px 25px 0 rgba(110,130,208, .18);
+}
+
+.category_link
+{
+   text-decoration: none;
+   color: white;
+   /* font-weight: bold; */
+   cursor: pointer;
+}
+
+.liststyle
+{
+  list-style: none;
+}
+.headingfooter{
+  font-weight: bold;
+  color: white;
+}
+.foot{
+  color: white;
+}
+.citieswesearve{
+  color: black;
 }

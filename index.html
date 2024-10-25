@@ -12,6 +12,99 @@
 </head>
 
 <body>
+
+  <!-- Modal -->
+  <div class="modal fade" id="ankit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-container">
+            <div class="form-card">
+              <h2 class="text-center" id="formTitle">Login</h2>
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="loginEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="loginPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                    required name="password">
+                </div>
+                <div class="text-center">
+                  <button type="submit" style="width:200px" class="btn btn-primary">Login</button>
+                </div>
+                <div class="text-center mt-3">
+                  <p>Don't have an account? <a href="register.html" data-bs-toggle="modal"
+                      data-bs-target="#ankit1">Register Here</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- MODAL login end-->
+
+  <!-- MODAL register-->
+  <div class="modal fade" id="ankit1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+
+          <div class="form-container">
+            <div class="form-card">
+              <h2 class="text-center" id="formTitle">Login</h2>
+              <form id="loginForm">
+                <div class="mb-3">
+                  <label for="registerEmail" class="form-label">Email address</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required
+                    name="email">
+                </div>
+                <div class="mb-3">
+                  <label for="Username" class="form-label">Username</label>
+                  <input type="email" class="form-control" id="loginEmail" placeholder="Enter your email" required
+                    name="Username">
+                </div>
+                <div class="mb-3">
+                  <label for="createPassword" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                    required name="password">
+                </div>
+                <div class="mb-3">
+                  <label for="confirmPassword" class="form-label">Confirm Your Password</label>
+                  <input type="password" class="form-control" id="loginPassword" placeholder="Enter your password"
+                    required name="password">
+                </div>
+                <div class="text-center">
+                  <button type="submit" style="width: 200px;" class="btn btn-primary">Sign Up</button>
+                </div>
+                <div class="text-center mt-3">
+                  <p>Already have an account? <a href="login.html" data-bs-toggle="modal" data-bs-target="#ankit">Login
+                      Here</a></p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- modal register end -->
+  <!-- modal close -->
+
+
   <!-- Navbar start -->
   <header class="fixed-top">
     <div class="notification d-block d-sm-none p-2">
@@ -62,7 +155,11 @@
               <a class="nav-link mymenu_anchor" aria-disabled="true" href="contact.html">Dietician & GYM</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link mymenu_anchor" href="login.html">Login</a>
+              <a class="nav-link mymenu_anchor" data-bs-toggle="modal" data-bs-target="#ankit"
+                href="login.html">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mymenu_anchor" data-bs-toggle="modal" data-bs-target="#ankit1" href="#">Signup</a>
             </li>
             <li class="nav-item">
               <a class="nav-link mymenu_anchor" href="contactus.html">Contact Us</a>
@@ -100,7 +197,8 @@
 
 
   <div class=" container mt-2 text-center  text  ">
-    <p class="p-4">Organic Corner Fresho, a fresh fruit and vegetable store, located in Ambala city is one of its kind fresh mart
+    <p class="p-4">Organic Corner Fresho, a fresh fruit and vegetable store, located in Ambala city is one of its kind
+      fresh mart
       where you can get all kinds of Indian & Exotic Fruits and Vegetables, Variety of Indian and Imported Dry-Fruits,
       Freshly made Juices, Smoothies, Shakes and Salads. Welcome to our Dry fruits online store for Pan India Delivery.
     </p>
@@ -115,14 +213,14 @@
 
   <!-- cards statt -->
 
-  <h2 class="text-center mt-2" id="shopbycategory">Shop by Category</h2>
-  <div class="container mt-4">
+  <h2 class="text-center mt-2 mb-4" id="shopbycategory">Shop by Category</h2>
+  <div class="container ">
     <div class="row">
       <div class="col-sm-3  col-12 mycards">
         <div class="card">
-          <img src="images/pexels-pixabay-68525.jpg" class="card-img-top" alt="...">
+          <img src="images/dried fruits.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-center">Ambala</h5>
+            <h5 class="card-title text-center">Dried Fruits</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <div class="text-center">
@@ -133,9 +231,9 @@
       </div>
       <div class="col-sm-3  col-12 mycards">
         <div class="card">
-          <img src="images/pexels-janetrangdoan-1092730.jpg" class="card-img-top" alt="...">
+          <img src="images/dried berries.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-center">Chandigarh</h5>
+            <h5 class="card-title text-center">Dried Berries</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <div class="text-center"><a href="#" class="btn btn-danger">Read More</a>
@@ -145,9 +243,9 @@
       </div>
       <div class="col-sm-3  col-12  mycards">
         <div class="card">
-          <img src="images/pexels-pixabay-70746.jpg" class="card-img-top" alt="...">
+          <img src="images/edible seeds.png" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title text-center">Karnal</h5>
+            <h5 class="card-title text-center">Edible Seeds</h5>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
               content.</p>
             <div class="text-center">
@@ -157,6 +255,50 @@
         </div>
       </div>
     </div>
+
+
+
+    <div class="row mt-4">
+      <div class="col-sm-3  col-12 mycards">
+        <div class="card ">
+          <img src="images/millet.png" class="card-img-top " alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Millet</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3  col-12 mycards">
+        <div class="card ">
+          <img src="images/flavoured nuts.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Flavoured Nuts</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <div class="text-center"><a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3  col-12  mycards">
+        <div class="card">
+          <img src="images/imported nuts.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title text-center">Imported Nuts</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's
+              content.</p>
+            <div class="text-center">
+              <a href="#" class="btn btn-danger">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <div class="doted-div w-100 mt-5 mb-4"></div>
 
   </div>
@@ -164,33 +306,260 @@
   <!-- cards end -->
 
   <!-- our services -->
-  <h2 class="text-center mt-2" id="shopbycategory">Our Services</h2>
+  <h2 class="text-center mt-2 mb-4" id="shopbycategory">Our Services</h2>
   <div class="container">
     <div class="row">
       <div class="col-sm-3  col-12 mycards">
-        <div class="card">
+        <div class="card mt-0">
           <img src="images/Brown and Yellow Modern Food Poster.png" class="card-img-top" alt="...">
         </div>
       </div>
       <div class="col-sm-3  col-12 mycards">
-        <div class="card">
+        <div class="card mt-0">
           <img src="images/Green and Orange Organic Vegetable Sale Instagram Post.png" class="card-img-top" alt="...">
         </div>
       </div>
       <div class="col-sm-3  col-12 mycards">
-        <div class="card">
+        <div class="card mt-0">
           <img src="images/Yellow And Orange Bold Food Catering Flyer.png" class="card-img-top" alt="...">
         </div>
       </div>
-      
+
     </div>
     <div class="doted-div w-100 mt-5 mb-4"></div>
 
   </div>
 
 
-   <!-- our services end -->
-    
+  <!-- our services end -->
+
+  <div class="container text-center  colorr">
+    <div class="row  logoss">
+      <div class="col-sm-3 col-12 mt-4">
+        <img src="/images/100.jpg" width="150" height="150" alt="">
+        <h3 class="mt-4">100% CHEMICAL FREE </h3>
+        <p style="text-align: justify;">Our organic fruits & vegetables are free of synthetic additives like pesticides
+          and chemical fertilisers. Climate acceptable harvesting is done using natural manures.</p>
+      </div>
+      <div class="col-sm-3 col-12 mt-4">
+        <img src="/images/familylogo.jpg" width="150" height="150" alt="">
+        <h3 class="mt-4">FAMILY HEALTH</h3>
+        <p style="text-align: justify;">Health is our priority. All our fruits & vegetables are very well specified with
+          their content of energy and nutritional value</p>
+      </div>
+      <div class="col-sm-3 col-12 mt-4">
+        <img src="/images/fresh.jpg" width="150" height="150" alt="">
+        <h3 class="mt-4">ALWAYS FRESH</h3>
+        <p style="text-align: justify;">Freshness is our integrity. We serve untouched fruits & vegetables specially
+          picked straight from the farms for our prestigious consumers.</p>
+      </div>
+      <div class="col-sm-3 col-12 mt-4">
+        <img src="/images/sef.avif" width="150" height="150" alt="">
+        <h3 class="mt-4">FOOD SAFETY</h3>
+        <p style="text-align: justify;">We assure safe food handling practices and procedures are implemented at every
+          stage of the food production life cycle in order to curb risks and prevent harm to consumers</p>
+      </div>
+    </div>
+  </div>
+  <div class=" text-center mt-4 mb-4">
+    <button type="button" class="btn btn-outline-success rounded-pill ">Click Here To Get Added in Whatsapp
+      Group</button>
+  </div>
+
+
+
+
+  <footer>
+    <div class="container-fluid">
+      <div class="row mynav_background">
+        <div class="col-sm-4 col-12 mt-4">
+          <div class="text-center">
+            <!-- <h4 class="text-white"></h4> -->
+            <ul>
+              <li class="liststyle"><a class="category_link headingfooter" href="#"> Organic Corner</a></li>
+
+              <li class="liststyle"><a class="category_link" href="#">About Us</a></li>
+              <li class="liststyle"><a class="category_link" href="#"> Become a Rider</a></li>
+              <li class="liststyle"><a class="category_link" href="#">In News</a></li>
+              <li class="liststyle"><a class="category_link" href="#"> Green Basket</a></li>
+              <li class="liststyle"><a class="category_link" href="#">Privacy Policy</a></li>
+              <li class="liststyle"><a class="category_link" href="#"> Tearms And Conditions</a></li>
+              <li class="liststyle"><a class="category_link" href="#">Carrer At Organic Corber</a></li>
+              <li class="liststyle"><a class="category_link" href="#">cc Blog</a></li>
+              <li class="liststyle"><a class="category_link" href="#">cc Daily</a></li>
+              <li class="liststyle"><a class="category_link" href="#">cc Now</a></li>
+
+
+
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-sm-3 col-12 mt-4">
+          <div class="text-center">
+            <!-- <h2 class="text-white">Help</h2> -->
+            <ul>
+              <li class="liststyle"><a class="category_link headingfooter" href="#">Help</a></li>
+              <li class="liststyle"><a class="category_link" href="#">FAQs</a></li>
+              <li class="liststyle"><a class="category_link" href="#"> Contact Us</a></li>
+              <li class="liststyle"><a class="category_link" href="#">cc Wallet FAQs</a></li>
+              <li class="liststyle"><a class="category_link" href="#"> cc Wallet T&Cs</a></li>
+              <li class="liststyle"><a class="category_link" href="#">Vendor Connect</a></li>
+
+            </ul>
+
+          </div>
+        </div>
+        <div class="col-sm-3 col-12 mt-4">
+          <div class="text-center">
+            <img src="images/Watercolor Banana Fruit logo (2).jpg" class="img-fluid" height="300" width="300" />
+            <!-- <p class="headingfooter">IOS&nbsp;|&nbsp;ANDROID&nbsp;|&nbsp;BLACK BERRY</p> -->
+
+            <img src="images/qr.webp" class="img-fluid" height="150" width="150" />
+            <p class="headingfooter">IOS&nbsp;|&nbsp;ANDROID&nbsp;|&nbsp;BLACK BERRY</p>
+          </div>
+        </div>
+        <div class="doted-div2 w-50 mt-2 mb-2"></div>
+
+      </div>
+      <div class="row mynav_background">
+        <div class="col foot">
+          <div class="text-center">
+            <h4 class="citieswesearve">Cities We Searve</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio soluta autem facere deserunt deleniti
+              dolor consectetur, ipsam unde provident qui, quasi est ullam explicabo nemo aliquid, vel debitis
+              praesentium ex earum neque! Doloremque ipsum a quos provident commodi voluptatem rerum eos beatae nemo,
+              maxime possimus exercitationem aliquam dolores, dolore tempora in quaerat! Culpa temporibus quas
+              voluptatum alias magnam inventore ad amet autem architecto incidunt illo deserunt nemo a veritatis quos
+              suscipit excepturi assumenda cupiditate nobis dolore ratione eum explicabo, distinctio tempora! Asperiores
+              quasi illum rerum adipisci officia. Saepe, accusamus! Nulla, neque magni. Doloremque ducimus, repellendus
+              nisi quis aut ipsam vero incidunt aperiam consectetur, fugit itaque repellat nam repudiandae tempore
+              distinctio voluptatibus omnis alias? Quidem sit obcaecati facere nam saepe ad eligendi ipsa repellendus
+              aliquam numquam, iste illum, ullam explicabo enim aperiam ab et recusandae? Ipsum vitae adipisci quia non
+              aperiam? Eum nemo temporibus, accusantium similique reiciendis, maxime quibusdam architecto eveniet illo
+              animi fugit laudantium distinctio consectetur omnis? Blanditiis explicabo quia nobis quos nulla dolor
+              mollitia dolores modi qui voluptatum ratione ipsum veniam illum minus, culpa perferendis provident
+              consequuntur vitae commodi nisi fugiat, accusamus quo repellendus. Consequuntur et ea quis eius dolore
+              optio perferendis quae cupiditate deserunt. Sed, voluptates aperiam. Dolorum?</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+
+  <!-- <footer>
+  <div class="container-fluid">
+    <div class="row mynav_background">
+      <div class="col-sm-12 mt-2 mb-3">
+      <h6 class="text-white text-center">Know More About us!</h6>
+      </div>
+
+    </div>
+    <div class="row mynav_background">
+      <div class="col-sm-3 mt-2">
+        <div class="card" style="width: 18rem;">
+          <div class="card-body">
+            <h5 class="card-title text-center">Download Our App</h5>
+            <p class="card-text">Below Scan To Downlad Our App.</p>
+            <div class="text-center">
+              <img src="images/qr.webp" class="img-fluid" height="100" width="100" />
+              <p>IOS&nbsp;|&nbsp;ANDROID&nbsp;|&nbsp;BLACK BERRY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-3 mt-2 ">
+        <div class="text-center">
+          <h2 class="text-white">Popular Category</h2>
+          <ul>
+            <li class="liststyle"><a class="category_link" href="#">Latest Product</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Festival Gifts</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Tending Cloth</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Grocery Discounts</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Electronic Offers</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Limtted Stocks</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Customize Packges</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Diwali Demaaka</a></li>
+
+
+          </ul>
+
+        </div>
+      </div>
+      <div class="col-sm-3 mt-2">
+        <div class="text-center">
+          <h2 class="text-white">Our Company</h2>
+          <ul>
+            <li class="liststyle"><a class="category_link" href="#">About us</a></li>
+            <li class="liststyle"><a class="category_link" href="#">How it Works</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Affliates</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Testimonials</a></li>
+            <li class="liststyle"><a class="category_link" href="contact.html">Contact us</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Plan & Pricing</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Latest Blog</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Feedback</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-sm-3 mt-2">
+        <div class="text-center">
+          <h2 class="text-white">Help Support</h2>
+          <ul>
+            <li class="liststyle"><a class="category_link" href="#">Support Forum</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Terms & Conditions</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Support Policy</a></li>
+            <li class="liststyle"><a class="category_link" href="#">FAQs</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Complaints</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Country Policy</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Customer Support</a></li>
+            <li class="liststyle"><a class="category_link" href="#">Griveances</a></li>
+
+
+          </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="row mynav_background">
+      <div class="col-sm-3">
+       <h6 class="text-center text-white">Youtube Follow Us</h6>
+       <iframe height="250" src="https://www.youtube.com/embed/rGdG8HAbreA?si=jfwR3XPC3rR-wnNn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
+      <div class="col-sm-3">    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet magnam totam illum modi
+        voluptatem rem delectus quia incidunt neque, nobis aperiam distinctio veniam minus ab at sed quisquam
+        facilis cum praesentium dolores architecto. Explicabo, vitae amet rem possimus.</p>
+      </div>
+      <div class="col-sm-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet magnam totam illum modi
+          voluptatem rem delectus quia incidunt neque, nobis aperiam distinctio veniam minus ab at sed quisquam
+          facilis cum praesentium dolores architecto. Explicabo, vitae amet rem possimus.</p>
+      </div>
+      <div class="col-sm-3">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit eveniet magnam totam illum modi
+          voluptatem rem delectus quia incidunt neque, nobis aperiam distinctio veniam minus ab at sed quisquam
+          facilis cum praesentium dolores architecto. Explicabo, vitae amet rem possimus.</p>
+      </div>
+    </div>
+
+  </div>
+  <div class="row  mynav_background">
+    <div class="col-sm-12 mt-3 mb-3">
+      <div class="text-center">
+        <h6 class="text-white">Copyrightby Travel Pvt Ltd &#169; 2024</h6>
+
+      </div>
+    </div>
+  </div>
+</footer>
+
+
+   -->
+  <!-- footer end -->
 
 
 
@@ -198,17 +567,23 @@
 
 
 
-
-
-
-  
-    
-
-  
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+  <!--Start of Tawk.to Script-->
+  <script type="text/javascript">
+    var Tawk_API = Tawk_API || {}, Tawk_LoadStart = new Date();
+    (function () {
+      var s1 = document.createElement("script"), s0 = document.getElementsByTagName("script")[0];
+      s1.async = true;
+      s1.src = 'https://embed.tawk.to/671921634304e3196ad6b4fa/1iat2kru7';
+      s1.charset = 'UTF-8';
+      s1.setAttribute('crossorigin', '*');
+      s0.parentNode.insertBefore(s1, s0);
+    })();
+  </script>
+  <!--End of Tawk.to Script-->
 </body>
 
 </html>
